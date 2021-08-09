@@ -33,7 +33,7 @@ source ~/.bashrc
 conda activate folding
 # original download link: https://www.pyrosetta.org/downloads 
 # Register first. Below is a copy, while download means obey the license requirements at https://els2.comotion.uw.edu/product/pyrosetta
-wget https://proteinfoldonazure.blob.core.windows.net/data/PyRosetta4.Release.python37.linux.release-289.tar.bz2
+wget https://asiahpcgbb.blob.core.windows.net/rosettaonazure/PyRosetta4.Release.python37.linux.release-289.tar.bz2
 tar -vjxf PyRosetta4.Release.python37.linux.release-289.tar.bz2
 cd PyRosetta4.Release.python37.linux.release-289/setup
 python setup.py install
@@ -42,3 +42,10 @@ python setup.py install
 conda deactivate    #back to conda (base)
 conda deactivate    #back to VM shell
 
+## Suggest to create a snapshot before next step
+# sudo waagent -deprovision+user
+
+## In Azure Cloud Shell, prepare VM image and get RESOURCE ID
+# az vm deallocate -n vmRoseTTAFoldHPCImg -g rgCycleCloud
+# az vm generalize -n vmRoseTTAFoldHPCImg -g rgCycleCloud
+# az image create -n imgRoseTTAhpc --source vmRoseTTAFoldHPCImg -g rgCycleCloud
