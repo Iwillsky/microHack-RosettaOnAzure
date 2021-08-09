@@ -12,7 +12,9 @@ This MicroHack is a walkthrough of creating an High Performance Computing (HPC) 
 After completing this MicroHack you will:
 
 · Know how to deploy a Slurm HPC cluster on Azure through Azure CycleCloud.
+
 · Run a HPC application on a Slurm HPC cluster.
+
 · Have a live RoseTTAFold computing environment.
 
 
@@ -33,9 +35,13 @@ After completing this MicroHack you will:
 ## Labs
 
 · Task 1: CycleCloud installation. 
+
 · Task 2: Prepare RoseTTAFold VM Image.
+
 · Task 3: Create a HPC cluster in CycleCloud.
+
 · Task 4: RoseTTAFold Dataset preparation.
+
 · Task 5: Run a RoseTTAFold sample.   
 
 ### Task 1: CycleCloud installation
