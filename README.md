@@ -1,4 +1,4 @@
-# microHack-RosettaOnAzure
+# MicroHack-RosettaFold On Azure
 Micro Hackthon of building Rosetta protein folding HPC cluster on Azure CycleCloud
 
 License statement: All RoseTTFold related resource owner is RosettaCommons. Please refert to its license requirements. The [branch](https://github.com/Iwillsky/RoseTTAFold) used in this micro-hackthon which modified for HPC running environment is also under the compliance of its fork source.
@@ -14,7 +14,8 @@ After completing this MicroHack you will:
 · Run an HPC application on a Slurm HPC cluster
 
 ## Architecture diagram
-![image]()
+
+![image](https://github.com/Iwillsky/microHack-RosettaOnAzure/blob/main/images/ArchRosettaOnAzure.jpg)
 
 ## Pre-Requisites
 
@@ -200,16 +201,26 @@ Picking final models of JobId rjob204
 Final models saved in: /shared/home/cycleadmin/model_204
 Done
 
-### Results
+### Lab Results
 
-Below is the image of two pdb protein structure of pyrosetta and end2end results in [PyMOL tools](https://pymol.org/) UI.
+Below is the image of two pdb protein structure of pyrosetta and end2end results in [PyMOL tools](https://pymol.org/) UI. If you have many pdb results, suggest to mount NFS volume to a dedicate workstation for convenience.  
 
 ![image](https://github.com/Iwillsky/microHack-RosettaOnAzure/blob/main/images/pdb_result.jpg)
 
-### Teardown: 
+### Lab Teardown: 
 If will not keep this enviroment, delete the resource group of 'rgCycleCloud' to tear down all the related resource directly.
 
 ## Appendix Links:
+
+Science Rosetta article: [Accurate prediction of protein structures and interactions using a three-track neural network | Science (sciencemag.org)](https://science.sciencemag.org/content/early/2021/07/19/science.abj8754)
+
+RoseTTAFold repo: [RosettaCommons/RoseTTAFold: This package contains deep learning models and related scripts for RoseTTAFold (github.com)](https://github.com/RosettaCommons/RoseTTAFold)
+
+RoseTTAFold branch repo for HPC: [RoseTTAFold for HPC](https://github.com/Iwillsky/RoseTTAFold)
+
+
+
+
 
 
 
