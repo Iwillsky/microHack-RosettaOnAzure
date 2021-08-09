@@ -30,9 +30,13 @@ After completing this MicroHack you will:
 ## Labs
 
 · Task 1: CycleCloud installation 
+
 · Task 2: Prepare RoseTTAFold VM Image 
+
 · Task 3: Create a HPC cluster in CycleCloud
+
 · Task 4: RoseTTAFold Dataset preparation
+
 · Task 5: Run a RoseTTAFold sample   
 
 ### Task 1: CycleCloud installation
