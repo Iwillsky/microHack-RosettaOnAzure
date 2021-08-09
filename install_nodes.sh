@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### Boot a VM using CentOS-based HPC 7.9 Gen2
+### Boot a VM using CentOS-based HPC 7.9 Gen1
 ### Resize OS disk(Stop VM; Set OS disk at least 64G; start VM)
 ### SSH login 
 
